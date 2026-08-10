@@ -7,6 +7,24 @@ from PIL import Image, ImageDraw, ImageFont
 from pdf2image import convert_from_bytes
 import docx
 import pytesseract
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
+
+# استدعاء الدالة قبل تشغيل البوت
+keep_alive()
 
 # جلب التوكن من متغيرات البيئة
 TOKEN = os.getenv("8049849829:AAEtmxs7GQyArz5U0ttk10jFIBKvKWw7NYs")
