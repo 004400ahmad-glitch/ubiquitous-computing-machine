@@ -1,0 +1,5 @@
+pyTelegramBotAPI
+Pillow
+python-docx
+pdf2image
+pytesseract
