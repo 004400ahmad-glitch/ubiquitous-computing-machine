@@ -1,6 +1,4 @@
-pyTelegramBotAPI
-Pillow
-python-docx
-pdf2image
-pytesseract
-Flask
+aiogram
+pillow
+img2pdf
+pymupdf
